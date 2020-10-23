@@ -1,0 +1,27 @@
+* Installation make-file for [[https://github.com/vdikan/cl-forja][CL-Forja]] system images
+
+Prepares =SBCL= --core images for remote work, with specific systems imported.
+Needs installed =SBCL=, =quicklisp= plus all systems marked as *local* cloned
+to ~/quicklisp/local-projects/~ from the locations provided.
+
+** Usage
+
+*** ~make core~
+
+Builds minimal image =forja.core= image with following systems:
+
+ * =:slynk= - required explicitly.
+ * =:cl-forja= - required explicitly, *local*: https://github.com/vdikan/cl-forja
+ * =:cl-ppcre= - dependency
+ * =:cl-arrows= - dependency
+
+*** ~make full~
+
+Apart from =core= packages requires the following, with their (numerous) dependencies:
+
+ * =:common-utils= - *local*: https://github.com/vdikan/common-utils
+
+** TODOs
+
+ * [ ] ~:toplevel~ configuration
+ * [ ] build with ASDF
