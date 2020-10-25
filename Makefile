@@ -8,6 +8,7 @@ full:
 	sbcl --eval '(ql:quickload :slynk)' \
 	     --eval '(ql:quickload :cl-forja)' \
 	     --eval '(ql:quickload :common-utils)' \
+	     --eval '(ql:quickload :forja-factory)' \
 	     --eval '(use-package  :cl-forja)' \
              --eval "(sb-ext:save-lisp-and-die #p\"forja.full\")"
 
