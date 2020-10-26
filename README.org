@@ -20,6 +20,7 @@ Builds minimal image =forja.core= image with following systems:
 Apart from =core= packages requires the following, with their (numerous) dependencies:
 
  * =:common-utils= - *local*: https://github.com/vdikan/common-utils
+ * =:forja-factory= - *local*: https://github.com/vdikan/forja-factory
 
 ** TODOs
 
